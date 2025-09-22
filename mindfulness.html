@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <title>GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mindfulness.css">
+</head>
+<body>
+<div class="section1">
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calorie.html">Calorie Calculator</a></li>
+            <li><a href="generator.html">Workout Generator</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="section">
+  <img src="./images/mindful.png" class="background" alt="Hero Image">
+  <section id="slogan">
+    <h1 class="quote">Just 30 minutes of exercise a day can boost your mood, energy, and metabolism</h1>
+  </section>
+</div>
+</div>
+<div class="page">
+    <h2>Guided Breathing Animation</h2>
+    <div class="circle">
+    <span id="text">Breathe In</span>
+    </div>
+    <div class="timer">
+      <h1 class="title">Timer Tool</h1>
+      <p class="time" id="time">25.00</p>
+      <div class="button-wrapper">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+</div>
+<div class="boxes">
+  <div class="rain">
+  <img src="./images/rain.jpeg" alt="Rain">
+  <h2>Rain</h2>
+  <button class="play" data-sound="rainsound">Play</button>
+  <button class="stop" data-sound="rainsound">Stop</button>
+  <audio id="rainsound" src="./audios/real-rain-sound-379215.mp3"></audio>
+</div>
+
+<div class="ocean">
+  <img src="./images/ocean.jpeg" alt="Ocean">
+  <h2>Ocean</h2>
+  <button class="play" data-sound="oceansound">Play</button>
+  <button class="stop" data-sound="oceansound">Stop</button>
+  <audio id="oceansound" src="./audios/ocean-waves-376898.mp3"></audio>
+</div>
+
+<div class="piano">
+  <img src="./images/piano.jpeg" alt="Piano">
+  <h2>Piano</h2>
+  <button class="play" data-sound="pianosound">Play</button>
+  <button class="stop" data-sound="pianosound">Stop</button>
+  <audio id="pianosound" src="./audios/soft-piano-100-bpm-121529.mp3"></audio>
+</div>
+</div>
+
+
+</div>
+<script src="./mindfulness.js"></script>
+</body>
+<footer> 
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Healthy Recipes</a>
+    <a href="calorie.html">Calorie & Nutrition Calculator</a>
+    <a href="generator.html">Workout Generator</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html">Contact & Feedback</a>
+</div>
+    <p>&copy; GreenBite. All Rights Reserved</p>
+<div class="social">
+    <a href="https://linkedin.com/" target="_blank">
+      <img src="./images/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <img src="./images/github.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/" target="_blank">
+      <img src="./images/instagram.png  " alt="Instagram">
+    </a>
+    <a href="https://youtube.com/" target="_blank">
+      <img src="./images/youtube.png" alt="YouTube">
+    </a>
+     <a href="https://facebook.com/" target="_blank">
+      <img src="./images/facebook.png" alt="FaceBook">
+    </a>
+</div>  
+</footer>
+</html>

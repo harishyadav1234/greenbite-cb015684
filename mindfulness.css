@@ -1,0 +1,256 @@
+.body{
+  font-family: 'Roboto Condensed';
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 80px; 
+}
+
+.circle {
+  width: 250px;  
+  height: 250px; 
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  animation: breathe 4s ease-in-out infinite;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.6);
+    background-color: lightgreen; 
+  }
+  50% {
+    transform: scale(1.1); 
+    background-color: rgb(40, 253, 3); 
+  }
+}
+
+.timer {
+  background-color: #4CAF50; 
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.timer .title {
+  color: #fff; 
+  margin-bottom: 15px;
+}
+
+.timer p{
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-wrapper button {
+  background-color: #fff;  
+  color: #000;             
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button-wrapper button:hover {
+  background-color: #f0f0f0; 
+}
+
+
+
+
+.boxes {
+  display: flex;          
+  gap: 30px;               
+  justify-content: center; 
+  margin: 50px 0;
+}
+
+.rain {
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.ocean{
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.piano{
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.play-btn {
+  margin-top: 10px;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.section{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.background{
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 110%;
+}
+#slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; 
+  color: white;
+  padding: 0 20px;
+  font-size: 1.6rem;
+}
+
+.rain img{
+  border-radius: 12px;
+  width: 320px;
+}
+
+.ocean img{
+  border-radius: 12px;
+  width: 320px;
+}
+
+.piano img{
+  border-radius: 12px;
+  width: 320px;
+}
+
+.rain:hover{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.9);
+  transform: translateY(-px);
+}
+
+.ocean:hover{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.9);
+  transform: translateY(-px);
+}
+
+.piano:hover{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.9);
+  transform: translateY(-px);
+}
+
+.play {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stop {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%; 
+        flex-direction: column;
+        background-color: #333;
+        width: 200px;
+        transition: 0.3s;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        right: 0; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+    }
+
+  .boxes {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;           
+    }
+
+    #slogan{
+      font-size: 1.3rem;
+    }
+
+    .section1{
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    .page{
+      margin-top: 10px;
+    }
+
+
+  }
+
+

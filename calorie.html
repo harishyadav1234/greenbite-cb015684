@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <title>GreenBite</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./calorie.css" />
+</head>
+<body>
+<div class="section">
+  <img src="images/caloriehero.jpg" class="background" alt="Hero Image" />
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calorie.html">Calorie Calculator</a></li>
+            <li><a href="generator.html">Workout Generator</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+  <section id="slogan">
+    <h1>Even at rest, your body burns calories!</h1>
+    <h1>Calculate your BMR, TDEE, and macros to plan a healthy diet.</h1>
+  </section>
+</div>
+
+<div class="calculator">
+  <div class="box">
+    <h1>Calorie & Nutrition Calculator</h1>
+    <div class="ageinput">
+      <label for="dob">Date of Birth</label>
+      <input type="date" class="dobinput" id="dob" required>
+    </div>
+    <p>Gender</p>
+    <div class="gender">
+      <input type="radio" name="gender" value="m">Male
+      <input type="radio" name="gender" value="f">Female
+    </div>
+    <div class="height">
+      <label for="height">Height (cm)</label>
+      <input type="number" class="heightinput" id="height" required placeholder="Enter your height">
+    </div>
+    <div class="weight">
+      <label for="weight">Weight (kg)</label>
+      <input type="number" class="weightinput" id="weight" required placeholder="Enter your weight">
+    </div>
+    <div class="activity-level">
+      <label for="activity">Activity Level:</label>
+      <select id="activity" class="activityinput" required>
+        <option disabled selected>Select your activity level</option>
+        <option>Sedentary (Little or no exercise)</option>
+        <option>Lightly active (Light exercise/sports 1–3 days/week)</option>
+        <option>Moderately active (Moderate exercise 3–5 days/week)</option>
+        <option>Very active (Hard exercise 6-7 days/week)</option>
+        <option>Super active (Very hard exercise/physical job)</option>
+      </select>
+    </div>
+    <button>Calculate</button>
+  </div>
+</div>
+
+<footer>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Healthy Recipes</a>
+    <a href="calorie.html">Calorie & Nutrition Calculator</a>
+    <a href="generator.html">Workout Generator</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html">Contact & Feedback</a>
+  </div>
+  <p>&copy; GreenBite. All Rights Reserved</p>
+  <div class="social">
+    <a href="https://linkedin.com/" target="_blank">
+      <img src="./images/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <img src="./images/github.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/" target="_blank">
+      <img src="./images/instagram.png  " alt="Instagram">
+    </a>
+    <a href="https://youtube.com/" target="_blank">
+      <img src="./images/youtube.png" alt="YouTube">
+    </a>
+     <a href="https://facebook.com/" target="_blank">
+      <img src="./images/facebook.png" alt="FaceBook">
+    </a>
+  </div>
+</footer>
+<script src="./calorie.js"></script>
+</body>
+</html>

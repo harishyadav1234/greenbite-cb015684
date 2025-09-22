@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <title>GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./generator.css">
+</head>
+<body>
+<div class="section">
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calorie.html">Calorie Calculator</a></li>
+            <li><a href="generator.html">Workout Generator</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+  <img src="./images/jogging.jpg" class="background" alt="Hero Image">
+  <section id="slogan">
+    <h1 class="quote">Just 30 minutes of exercise a day can boost your mood, energy, and metabolism</h1>
+  </section>
+</div>
+<div class="x">
+  <div class="cal">
+    <h1>Generate a Random Workout</h1>
+    <label for="bodypart">Body Part</label>
+      <select id="bodypart" class="bodypart" name="bodypart" required>
+      <option value="">Select Body Part</option>
+        <option>Arms</option>
+        <option>Legs</option>
+        <option>Full Body</option>
+        <option>Back</option>
+        <option>Chest</option>
+      </select>
+        <br>
+      <label for="equipment">Equipment</label>
+        <select id="equipment" class="equipment"  name="equipment" required>
+          <option value="">Select an Equipment</option>
+          <option value="None">None</option>
+          <option value="Dumbbells">Dumbbells</option>
+      </select>
+     <button id="generate">Generate</button>
+  </div>
+  <div id="workoutresults">
+      <h2>Your Workout</h2>
+      <ul id="workout"></ul>
+      <div id="timer">Time Left: </div>
+    </div>
+</div>
+
+
+<script src="./generator.js"></script>
+</body>
+<footer> 
+    <div class="links">
+    <a href="home.html">Home</a>
+    <a href="recipes.html">Healthy Recipes</a>
+    <a href="calorie.html">Calorie & Nutrition Calculator</a>
+    <a href="generator.html">Workout Generator</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html">Contact & Feedback</a>
+</div>
+    <p>&copy; GreenBite. All Rights Reserved</p>
+<div class="social">
+    <a href="https://linkedin.com/" target="_blank">
+      <img src="./images/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <img src="./images/github.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/" target="_blank">
+      <img src="./images/instagram.png  " alt="Instagram">
+    </a>
+    <a href="https://youtube.com/" target="_blank">
+      <img src="./images/youtube.png" alt="YouTube">
+    </a>
+     <a href="https://facebook.com/" target="_blank">
+      <img src="./images/facebook.png" alt="FaceBook">
+    </a>
+</div>  
+</footer>
+</html>

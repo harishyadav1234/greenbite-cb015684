@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <title>GreenBite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calorie.html">Calorie Calculator</a></li>
+            <li><a href="generator.html">Workout Generator</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="page">
+  <div class="contact-form">
+  <h1>Send Us Your Feedback</h1>
+  <form id="form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" class="input-field" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" class="input-field" required>
+
+    <label for="message">Message</label>
+    <input type="text" id="message" name="message" class="input-field" required>
+
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
+  <p id="confirmation">Thank you for your feedback!</p>
+</div>
+
+  <div class="map">
+    <h1>Our Head Quarters</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6460510553106!2d80.61746657448509!3d7.281052813897768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3673f5e22ab3b%3A0xcbaef11262bec73!2sAPIIT%20Kandy%20Campus!5e0!3m2!1sen!2slk!4v1758222809111!5m2!1sen!2slk" 
+      width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="faq-section">
+    <h1>Frequently Asked Questions</h1>
+
+    <details>
+      <summary>What’s the purpose of GreenBite?</summary>
+      <p>GreenBite aims to provide healthy, sustainable food options while promoting wellness and environmental responsibility.</p>
+    </details>
+
+    <details>
+      <summary>How many employees work for GreenBite?</summary>
+      <p>GreenBite currently has a dedicated team of 50+ employees working across product development, marketing, and customer support.</p>
+    </details>
+
+    <details>
+      <summary>Where is GreenBite located?</summary>
+      <p>Our headquarters are located in Kandy, Sri Lanka, with distribution and service centers across the country.</p>
+    </details>
+  </div>
+</div>
+
+<script src="contact.js"></script>
+</body>
+<footer> 
+<div class="links">
+    <a href="home.html">Home</a>
+    <a href="recipes.html">Healthy Recipes</a>
+    <a href="calorie.html">Calorie & Nutrition Calculator</a>
+    <a href="generator.html">Workout Generator</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html">Contact & Feedback</a>
+</div>
+    <p>&copy; GreenBite. All Rights Reserved</p>
+<div class="social">
+    <a href="https://linkedin.com/" target="_blank">
+      <img src="./images/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <img src="./images/github.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/" target="_blank">
+      <img src="./images/instagram.png  " alt="Instagram">
+    </a>
+    <a href="https://youtube.com/" target="_blank">
+      <img src="./images/youtube.png" alt="YouTube">
+    </a>
+     <a href="https://facebook.com/" target="_blank">
+      <img src="./images/facebook.png" alt="FaceBook">
+    </a>
+</div>  
+</footer>
+</html>
